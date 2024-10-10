@@ -1,0 +1,118 @@
+.footer {
+    background-color: #f1f1f1; // Color de fondo del footer
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; // Cambiado para alinear los elementos en la parte superior
+    width: 100%;
+    max-width: 1200px; // Ajusta según el tamaño deseado
+}
+
+.footer-logo {
+    max-width: 250px; // Ajusta según el tamaño deseado
+} 
+
+.find-us {
+    display: flex;
+    justify-content: flex-end; // Alinea el texto a la derecha
+    background-color: black; // Fondo negro
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px; // Espacio debajo
+    border-radius: 5px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; // Alinea los iconos a la izquierda
+}
+
+.contact-items { // Nuevo contenedor para los elementos de contacto
+    display: flex; // Usa flexbox para alinear horizontalmente
+    flex-direction: column; // Mantiene cada item en una nueva línea
+    align-items: flex-start; // Alinea a la izquierda
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+
+    a {
+        display: flex; // Alinea ícono y texto
+        align-items: center; // Centrar verticalmente
+        color: inherit; // Mantener el color del texto
+        text-decoration: none; // Sin subrayado
+    }
+
+    p {
+        margin-left: 10px; // Espacio entre el icono y el texto
+    }
+}
+
+// Estilos para los iconos
+.social-iconFacebook,
+.social-iconWsp,
+.social-iconInstagram,
+.social-iconGmail {
+    width: 40px; // Ajusta el tamaño de los iconos
+    height: 40px;
+}
+
+.social-iconFacebook {
+    color: #3b5998; // Color de Facebook
+}
+
+.social-iconWsp {
+    color: #25D366; // Color de WhatsApp
+}
+
+.social-iconInstagram {
+    color: #E1306C; // Color de Instagram
+}
+
+.social-iconGmail {
+    color: #DB4437; // Color de Gmail
+}
+
+.footer-address {
+  
+
+    p{
+        text-align: center; // Centrar la dirección
+        margin-top: 20px; // Espacio entre la dirección y el resto del contenido
+        color: #333; // Color de la dirección
+        font-size: 24px;
+    }
+}
+
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 700px) {
+    .footer{
+        .footer-content{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .contact-info{
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .find-us{
+            margin-top: 15px;
+        }
+
+    
+    }
+}
