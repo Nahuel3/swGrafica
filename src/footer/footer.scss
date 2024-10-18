@@ -1,5 +1,5 @@
 .footer {
-    background-color: #f1f1f1; // Color de fondo del footer
+    background-color: white; // Color de fondo del footer
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -15,9 +15,20 @@
     max-width: 1200px; // Ajusta según el tamaño deseado
 }
 
+.logo-container {
+    display: flex; // Alinea los logos en fila
+    align-items: center; // Centra verticalmente
+}
+
 .footer-logo {
     max-width: 250px; // Ajusta según el tamaño deseado
-} 
+}
+
+.small-logo {
+    max-width: 150px; // Ajusta según el tamaño deseado para los logos pequeños
+    margin-left: 10px; // Espacio entre los logos
+}
+
 
 .find-us {
     display: flex;
@@ -85,8 +96,12 @@
 
 
 /* Estilos para pantallas pequeñas */
-@media (max-width: 700px) {
+@media (max-width: 790px) {
     .footer{
+        .logo-container{
+            display: flex;
+            flex-direction: column;
+        }
         .footer-content{
             flex-direction: column;
             align-items: center;

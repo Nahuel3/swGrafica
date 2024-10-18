@@ -6,6 +6,7 @@ import ImagenFondo from './preSection/imgGraficaSection';
 import Section from './Section/section';
 import Banner from './banner/banner.jsx';
 import Presupuesto from './presupuesto/presupuesto.jsx';
+import AyudaC from './ayudaCompra/ayudaCompra.jsx';
 import Foters from './footer/footer.jsx';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Section />
       <Banner />
       <Presupuesto />
+      <AyudaC />
       <Foters />
     </div>
   );

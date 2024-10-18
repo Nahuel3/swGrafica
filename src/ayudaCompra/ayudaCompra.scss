@@ -1,0 +1,36 @@
+.contacto-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #00A859; // Puedes ajustar el color de fondo si es necesario
+    border-radius: 8px; // Borde redondeado para un diseño más suave
+    color: white;
+    margin-bottom: 10px;
+
+    h1{
+        font-size: 40px;
+    }
+
+    p{
+       margin-top: 15px;
+       margin-bottom: 20px;
+       font-size: 20px;
+        color: rgba(255, 255, 255, 0.88);
+    }
+  }
+  
+  .contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent; // Fondo transparente
+    color: white; // Color del texto
+    border: 2px solid white; // Borde blanco
+    border-radius: 4px; // Borde redondeado
+    text-decoration: none; // Sin subrayado
+    transition: background-color 0.3s, color 0.3s; // Transiciones suaves
+  
+    &:hover {
+      background-color: white; // Fondo blanco al pasar el mouse
+      color: #00A859; // Cambiar color del texto al color de tu marca
+    }
+  }
+  
