@@ -26,7 +26,7 @@ const Presupuesto = () => {
           En SW Artes Gráficas, estamos listos para dar vida a tus ideas. 
           ¿Tenés un diseño en mente? ¡Nosotros lo hacemos!
         </p>
-        <a href="https://wa.me/tu_numero_de_telefono" target='blank' className="button">Solicitar Presupuesto</a>
+        <a href="https://wa.me/5491157007122" target="_blank" rel="noopener noreferrer" className="button">Solicitar Presupuesto</a>
       </div>
 
       <div className={`section-content ${expandedSection === 'comoEnviarArchivos' ? 'expanded' : ''}`}>
