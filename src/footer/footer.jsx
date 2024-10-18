@@ -40,9 +40,7 @@ const Foters = () => {
                     </div>
                 </div>
             </div>
-            <div className="footer-address">
-                <p>Avellaneda 4588, esquina Carrasco - CABA</p>
-            </div>
+           
         </footer>
     );
 };

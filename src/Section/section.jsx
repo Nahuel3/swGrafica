@@ -47,7 +47,6 @@ const Section = () => {
     setCurrentArticleIndex(index);
   };
 
-  // Efecto para cambiar la imagen en "Impresiones y Gráfica" cada 5 segundos
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentArticleIndex((prevIndex) => (prevIndex + 1) % articles.length);
@@ -56,7 +55,6 @@ const Section = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Efecto para cambiar la imagen en "Sostenibilidad" cada 5 segundos
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSustainabilityIndex((prevIndex) => (prevIndex + 1) % sustainabilityImages.length);
@@ -66,18 +64,29 @@ const Section = () => {
   }, []);
 
   return (
-    <div id="quienesSomos" className="section">
-      <h2 className="section-title" onClick={() => toggleExpand('quienesSomos')}>
-        ¿Quiénes Somos?
-      </h2>
-      <div className={`section-content ${expandedSection === 'quienesSomos' ? 'expanded' : ''}`}>
-        En SW Artes Gráficas nos proponemos liderar el sector de la impresión digital mediante la entrega de soluciones de alta calidad y de forma eficiente. Nuestro compromiso incluye minimizar costos y reducir la huella ecológica a través de tecnologías innovadoras, uso de materiales reciclados y mejora continua de nuestros procesos.
+    <div id='quienesSomos' className="sections-container">
+      <div className="section-titles">
+        <h2 className="section-title" onClick={() => toggleExpand('quienesSomos')}>
+          ¿Quiénes Somos?
+        </h2>
+        <h2 className="section-title" onClick={() => toggleExpand('impresiones')}>
+          Impresiones y Gráfica
+        </h2>
+        <h2 className="section-title" onClick={() => toggleExpand('sostenibilidad')}>
+          Sostenibilidad: Un Compromiso con el Futuro
+        </h2>
       </div>
 
-      <h2 className="section-title" onClick={() => toggleExpand('impresiones')}>
-        Impresiones y Gráfica
-      </h2>
+      <div className={`section-content ${expandedSection === 'quienesSomos' ? 'expanded' : ''}`}>
+        <p>
+        En SW Artes Gráficas nos proponemos liderar el sector de la impresión digital mediante la entrega de soluciones de alta calidad y de forma eficiente. Nuestro compromiso incluye minimizar costos y reducir la huella ecológica a través de tecnologías innovadoras, uso de materiales reciclados y mejora continua de nuestros procesos. Aspiramos a la transición hacia una impresión más sostenible, impulsando la innovación y manteniendo un firme compromiso con nuestros clientes.
+        </p>
+      </div>
+
       <div className={`section-content ${expandedSection === 'impresiones' ? 'expanded' : ''}`}>
+        <p>
+          Mas de 40 años ofreciendo calidad en cada trabajo, celeridad en cada entrega y nitidez en cada impresión
+        </p>
         <div className="image-carousel">
           <img
             src={articles[currentArticleIndex].image}
@@ -99,11 +108,16 @@ const Section = () => {
         </ul>
       </div>
 
-      <h2 className="section-title" onClick={() => toggleExpand('sostenibilidad')}>
-        Sostenibilidad: Un Compromiso con el Futuro
-      </h2>
       <div className={`section-content ${expandedSection === 'sostenibilidad' ? 'expanded' : ''}`}>
-        <p>En SW Artes Gráficas, la sostenibilidad es un compromiso central. Sabemos que esta industria ha sido contaminante, pero creemos que es posible ofrecer productos de alta calidad de forma responsable. Por eso, hemos implementado prácticas y tecnologías que reducen nuestro impacto ambiental: eficiencia energética; Papel de caña y papel de rotación; tintas ecológicas y reciclables; reutilización y reciclaje de materiales.</p>
+        <p>En SW Artes Gráficas, la sostenibilidad es un compromiso central. Sabemos que esta industria ha sido contaminante, pero creemos que es posible ofrecer productos de alta calidad de forma responsable. Por eso, hemos implementado prácticas y tecnologías que reducen nuestro impacto ambiental: 
+        </p>
+        <ul>
+            <li>Eficiencia energética</li>
+            <li>Papel de caña y papel de rotación</li>
+            <li>Tintas ecológicas y reciclables</li>
+            <li>Reutilización y reciclaje de materiales;</li>
+          </ul>
+          
         <div className="image-carousel">
           <img
             src={sustainabilityImages[currentSustainabilityIndex].image}

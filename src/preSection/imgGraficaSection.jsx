@@ -1,6 +1,6 @@
 import React from 'react';
 import './imgGrafica.scss';
-import imgPortada from './PortadaGrafica.png'; // Logo de tu empresa
+import imgPortada from './swFotoBackground.png'; // Logo de tu empresa
 
 const ImgGraficaSection = () => {
   return (
