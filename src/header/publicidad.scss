@@ -13,4 +13,12 @@
         text-align: center;
     }
   }
+
+  @media (max-width: 920px) {
+    .container-publicidad{
+        h1{
+            font-size: 18px;
+        }
+    }
+  }
   

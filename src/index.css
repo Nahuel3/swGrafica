@@ -1,0 +1,14 @@
+/* global.scss */
+@font-face {
+    font-family: 'Agrandir';
+    src: url('./assets/fonts/Agrandir-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Agrandir', sans-serif;
+  }
+  

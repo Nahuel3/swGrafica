@@ -22,25 +22,25 @@ const Foters = () => {
                         <div className="contact-item">
                             <a href="https://wa.me/5491157007122" target="_blank" rel="noreferrer">
                                 <FaWhatsapp className="social-iconWsp" />
-                                <p>+54 9 11 5700-7122</p>
+                               
                             </a>
                         </div>
                         <div className="contact-item">
                             <a href="https://www.instagram.com/sw_artesgraficas/" target="_blank" rel="noreferrer">
                                 <FaInstagram className="social-iconInstagram" />
-                                <p>@sw_artesgraficas</p>
+                                
                             </a>
                         </div>
                         <div className="contact-item">
                             <a href="https://www.facebook.com/artesgraficas.sw/" target="_blank" rel="noreferrer">
                                 <FaFacebookF className="social-iconFacebook" />
-                                <p>SW Artes Gráficas</p>
+                               
                             </a>
                         </div>
                         <div className="contact-item">
                             <a href="mailto:sw.impresion@gmail.com" target="_blank" rel="noreferrer">
                                 <FaRegEnvelope className="social-iconGmail" />
-                                <p>sw.impresion@gmail.com</p>
+                                
                             </a>
                         </div>
                     </div>
