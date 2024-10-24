@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './banner.scss';
-import comoComprar from './comoComprar.jpg';
+import comoComprar from './comoComprar.png';
 import enviarFormato from './enviarFormato.png';
 
 const Banner = () => {
