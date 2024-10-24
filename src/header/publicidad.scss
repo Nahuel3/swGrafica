@@ -1,16 +1,29 @@
 
 .container-publicidad {
-    background-color: #00A859;
-    height: 90px;
+    background-color: #5f1089;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
 
+    a{
+        text-decoration: none; /* Elimina cualquier subrayado */
+        color: inherit; /* Mantiene el color del texto como está */
+    }
+
     h1{
         color: white;
         font-size: 26px;
         text-align: center;
+        margin-right: 15px;
+    }
+
+    .social-iconWspPubli{
+        color: #25D366; // Color de WhatsApp
+        position: relative;
+        top: 4px;
+        
     }
   }
 
@@ -21,4 +34,15 @@
         }
     }
   }
+
+  @media (max-width: 640px) {
+    .container-publicidad{
+       
+        h1{
+            font-size: 16px;
+            max-width: 300px;
+        }
+    }
+  }
+  
   

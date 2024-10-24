@@ -15,7 +15,7 @@ const Presupuesto = () => {
           Solicitar Presupuesto
         </h2>
         <h2 className="section-title" onClick={() => toggleExpand('comoEnviarArchivos')}>
-          Cómo Enviar Archivos
+        ¿Cómo enviar archivos?
         </h2>
       </div>
 
