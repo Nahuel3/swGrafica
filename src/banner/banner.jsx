@@ -18,12 +18,20 @@ const Banner = () => {
   return (
     <div className="banner">
       {images.map((image, index) => (
-        <img
+        <a
           key={index}
-          src={image}
-          alt={`Banner ${index + 1}`}
-          className={`banner-image ${index === currentIndex ? 'active' : ''}`}
-        />
+          href="https://wa.me/5491157007122"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Enlace a WhatsApp"
+          className={`banner-link ${index === currentIndex ? 'active' : ''}`}
+        >
+          <img
+            src={image}
+            alt={`Banner ${index + 1}`}
+            className={`banner-image ${index === currentIndex ? 'active' : ''}`}
+          />
+        </a>
       ))}
     </div>
   );
