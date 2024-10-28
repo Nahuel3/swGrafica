@@ -4,7 +4,10 @@ import comoComprar from './comoComprar.png';
 import enviarFormato from './enviarFormato.png';
 
 const Banner = () => {
-  const images = [comoComprar, enviarFormato];
+  const images = [
+    { src: comoComprar, alt: "comoComprar" },
+    { src: enviarFormato, alt: "enviarFormato" }
+  ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -19,7 +22,7 @@ const Banner = () => {
     <div className="banner">
       {images.map((image, index) => (
         <a
-          key={index}
+          key={image.alt} // Usa el atributo `alt` como clave única
           href="https://wa.me/5491157007122"
           target="_blank"
           rel="noreferrer"
@@ -27,8 +30,8 @@ const Banner = () => {
           className={`banner-link ${index === currentIndex ? 'active' : ''}`}
         >
           <img
-            src={image}
-            alt={`Banner ${index + 1}`}
+            src={image.src}
+            alt={`Banner ${image.alt}`}
             className={`banner-image ${index === currentIndex ? 'active' : ''}`}
           />
         </a>
