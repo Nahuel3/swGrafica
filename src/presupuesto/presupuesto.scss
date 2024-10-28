@@ -9,7 +9,7 @@
   
   .section-titles {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     margin-bottom: 20px;
     color: white;
@@ -28,10 +28,16 @@
     padding: 10px;
     border-radius: 4px;
     transition: background-color 0.3s ease;
+
+   
   
     @media (max-width: 920px) {
       margin-bottom: 20px;
     }
+  }
+
+  .section-title:hover {
+    background-color: #5f1089; 
   }
   
   .section-content {
@@ -54,28 +60,6 @@
 
     .a-presupuesto{
       text-decoration: none;
-    }
-
-    .btn-whatsapp {
-      background-color: #00A859; 
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      text-transform: uppercase;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-    
-    .btn-whatsapp:hover {
-      background-color: #5f1089; 
-    }
-    
-    .btn-whatsapp:focus {
-      outline: none;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Añade una sombra al hacer clic */
     }
 
     .text-presupuesto{     

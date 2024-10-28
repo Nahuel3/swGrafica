@@ -15,9 +15,7 @@ const Foters = () => {
                     <img src={bancoSeguroLogo} alt="Logo Banco Seguro" className="small-logo" />
                 </div>
                 <div className="contact-info">
-                    <div className="find-us">
-                        <span>Encontranos en:</span>
-                    </div>
+                   
                     <div className="contact-items"> {/* Añadido contenedor para alinear los elementos */}
                         <div className="contact-item">
                             <a href="https://wa.me/5491157007122" target="_blank" rel="noreferrer">

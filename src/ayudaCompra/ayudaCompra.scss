@@ -29,8 +29,9 @@
     transition: background-color 0.3s, color 0.3s; // Transiciones suaves
   
     &:hover {
-      background-color: white; // Fondo blanco al pasar el mouse
-      color: #00A859; // Cambiar color del texto al color de tu marca
+      background-color: #5f1089; // Fondo blanco al pasar el mouse
+      color: white; // Cambiar color del texto al color de tu marca
+  
     }
   }
   

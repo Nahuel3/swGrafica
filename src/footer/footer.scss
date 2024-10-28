@@ -48,7 +48,7 @@
 
 .contact-items { // Nuevo contenedor para los elementos de contacto
     display: flex; // Usa flexbox para alinear horizontalmente
-    flex-direction: column; // Mantiene cada item en una nueva línea
+    flex-direction: row; // Mantiene cada item en una nueva línea
     align-items: flex-start; // Alinea a la izquierda
 }
 
